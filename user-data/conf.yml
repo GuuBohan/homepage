@@ -1,47 +1,158 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Bohan's DashBoard
+  description: ''
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: Control Panel
+      path: https://link.gubohan.fun/control
+      target: newtab
+  logo: https://avatars.githubusercontent.com/u/32266601?v=4
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: high-contrast-light
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Getting Started
+    icon: fas fa-rocket
+    items:
+      - &ref_0
+        title: Dashy Live
+        description: Development a project management links for Dashy
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://live.dashy.to/
+        target: newtab
+        id: 0_1481_dashylive
+      - &ref_1
+        title: GitHub
+        description: Source Code, Issues and Pull Requests
+        url: https://github.com/lissy93/dashy
+        icon: favicon
+        id: 1_1481_github
+      - &ref_2
+        title: Docs
+        description: Configuring & Usage Documentation
+        provider: Dashy.to
+        icon: far fa-book
+        url: https://dashy.to/docs
+        id: 2_1481_docs
+      - &ref_3
+        title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
+        id: 3_1481_showcase
+      - &ref_4
+        title: Config Guide
+        description: See full list of configuration options
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        icon: fas fa-wrench
+        id: 4_1481_configguide
+      - &ref_5
+        title: Support
+        description: Get help with Dashy, raise a bug, or get in contact
+        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+        icon: far fa-hands-helping
+        id: 5_1481_support
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+  - name: Common Used
+    icon: fa fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_6
+        title: Jellyfin
+        description: Movie Website
+        icon: "\thttps://avatars.githubusercontent.com/u/45698031?s=200&v=4"
+        url: https://link.gubohan.fun/movie
+        target: newtab
+        statusCheck: true
+        id: 0_1050_jellyfin
+      - &ref_7
+        title: Cloudflare
+        icon: >-
+          https://img2.baidu.com/it/u=327422277,3969550399&fm=253&fmt=auto&app=138&f=JPG?w=952&h=500
+        url: https://dash.cloudflare.com/
+        target: newtab
+        id: 1_1050_cloudflare
+      - &ref_8
+        title: Zhihu
+        icon: >-
+          https://raw.githubusercontent.com/AaronConlon/blog/99de0d61fce8467ecd9e88df4128f83575f95991/public/zhihu.svg
+        url: https://www.zhihu.com
+        id: 2_1050_zhihu
+      - &ref_9
+        title: Hupu
+        icon: >-
+          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAe1BMVEXAHi+/GCu+ESbISVPRb3a9AB2/Fim8ABT13uD////fmp/ipqvUeH/CJTbOYWnLW2S8ABLouLy6AAD55ujbkpfvzdC9ABrgoaa9ABzFN0T57e7GQEvmtLjw1dbqwsXZh47clJr78vO8AA3jrbHYgonLUl3QaXHRcnnEMD5mTD8JAAABIUlEQVR4AWKgNWBkwiPHDGiGrg4kBIIoinbhD6eNGdwh/wgXGY9g7++pVovZl5Pj/KDrwQ/CXcmI4uRHUw9Axm1iQiql30C2drmH0JJZfrt7fuHbbyvzqhY4a3jbJUnI6ImOeUHvNch4UQwM2Xtfe4egQCg1Rt4Lfkf1gR2KCnsU7oNeaaK6vdCYcFT7ThRWAOZPtHMIWSCoyx57akHDX6gbSC4ArKoJMPIQCIbXB9QIufBya3N3GOcJQPV86tCjNGap0GnuA/2ErJDGZRQB3MOef88ANC1G+7nQSVDwAlWFHnuS+xj16yUtFO97HgIoCqxDgPH1FDuAryH4AuRcIE6zr3fSttWjm6hIG4EyjTIxib0iItdmjqZ90CVGDrF/2R97axWXpG+LGQAAAABJRU5ErkJggg==
+        url: https://www.hupu.com
+        id: 3_1050_hupu
+    filteredItems:
+      - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
+  - name: Movie
+    icon: fa fa-film
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - name: Temp
+    icon: fa fa-box-open
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - name: Work
+    icon: fa fa-folder-open
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_10
+        title: TongYi
+        icon: >-
+          https://img.alicdn.com/imgextra/i1/O1CN01asLYeX1WhbsyEZn5u_!!6000000002820-55-tps-56-56.svg
+        url: https://tongyi.aliyun.com/qianwen/
+        target: newtab
+        id: 0_419_tongyi
+    filteredItems:
+      - *ref_10
+  - name: Outdoors
+    icon: fa fa-door-open
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_11
+        title: Twitter
+        url: https://x.com/
+        id: 0_863_twitter
+      - &ref_12
+        title: Ins
+        url: https://instagram.com
+        id: 1_863_ins
+    filteredItems:
+      - *ref_11
+      - *ref_12
