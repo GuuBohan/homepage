@@ -8,48 +8,118 @@ pageInfo:
   logo: https://avatars.githubusercontent.com/u/32266601?v=4
 appConfig:
   theme: high-contrast-light
+  layout: horizontal
+  iconSize: large
+  language: cn
+  startingView: minimal
+  defaultOpeningMethod: newtab
+  statusCheck: false
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableOidc: false
+    oidc: {}
+    enableHeaderAuth: false
+    headerAuth:
+      userHeader: REMOTE_USER
+      proxyWhitelist: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
 sections:
-  - name: Getting Started
-    icon: fas fa-rocket
+  - name: Bohan's Website
+    icon: >-
+      https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMeZ4IvNxuCkEhbY-7pSUh_pFpkdlgAAuG_MRsrphhUo6Qf79uu49kBAAMCAAN4AAM2BA
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
     items:
       - &ref_0
-        title: Dashy Live
-        description: Development a project management links for Dashy
-        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-        url: https://live.dashy.to/
+        title: Monitor
+        icon: >-
+          https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMiZ4IyaAh50XUKqq6DvWHcMBKeIlEAAuy_MRsrphhU7QUIT8TvgkcBAAMCAAN4AAM2BA
+        url: https://link.gubohan.fun/monitor
         target: newtab
-        id: 0_1481_dashylive
+        statusCheck: true
+        id: 0_1397_monitor
       - &ref_1
-        title: GitHub
-        description: Source Code, Issues and Pull Requests
-        url: https://github.com/lissy93/dashy
-        icon: favicon
-        id: 1_1481_github
+        title: Jellyfin
+        description: Movie Website
+        icon: "\thttps://avatars.githubusercontent.com/u/45698031?s=200&v=4"
+        url: https://link.gubohan.fun/movie
+        target: newtab
+        statusCheck: true
+        id: 1_1397_jellyfin
       - &ref_2
-        title: Docs
-        description: Configuring & Usage Documentation
-        provider: Dashy.to
-        icon: far fa-book
-        url: https://dashy.to/docs
-        id: 2_1481_docs
+        title: Home Assistant
+        icon: >-
+          https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMgZ4IxZofnaoMjvh7YGAysr9gtaxQAAum_MRsrphhUx9Tdy-SGs4ABAAMCAANtAAM2BA
+        url: https://link.gubohan.fun/ha
+        target: newtab
+        statusCheck: true
+        id: 2_1397_homeassistant
       - &ref_3
-        title: Showcase
-        description: See how others are using Dashy
-        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-        icon: far fa-grin-hearts
-        id: 3_1481_showcase
+        title: MacOS
+        icon: >-
+          https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMhZ4IyG5Xo9l0d1QINIflTIHhN-IMAAuq_MRsrphhUUZvBh2D6k7sBAAMCAANtAAM2BA
+        url: https://link.gubohan.fun/macos
+        target: newtab
+        statusCheck: true
+        id: 3_1397_macos
       - &ref_4
-        title: Config Guide
-        description: See full list of configuration options
-        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-        icon: fas fa-wrench
-        id: 4_1481_configguide
+        title: RSSHub
+        icon: >-
+          https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMjZ4Iys16DXXeE6AYjJkca2kLlpckAAu2_MRsrphhUkd2PQvqejLYBAAMCAAN4AAM2BA
+        url: https://link.gubohan.fun/rss
+        target: newtab
+        statusCheck: true
+        id: 4_1397_rsshub
       - &ref_5
-        title: Support
-        description: Get help with Dashy, raise a bug, or get in contact
-        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-        icon: far fa-hands-helping
-        id: 5_1481_support
+        title: Wechat RSS
+        icon: >-
+          https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMkZ4IzE79aa5qJpY1Vm66xQKHVEYEAAu6_MRsrphhUWST2AgeaC74BAAMCAAN4AAM2BA
+        url: https://link.gubohan.fun/wxrss
+        target: newtab
+        statusCheck: true
+        id: 5_1397_wechatrss
+      - &ref_6
+        title: Stock
+        icon: >-
+          https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMlZ4I0xWVwEiaKlxBZki5F3TpmLBEAAvi_MRsrphhUNyJJmLcPbgoBAAMCAAN4AAM2BA
+        url: https://link.gubohan.fun/stock
+        target: newtab
+        statusCheck: true
+        id: 6_1397_stock
     filteredItems:
       - *ref_0
       - *ref_1
@@ -57,102 +127,75 @@ sections:
       - *ref_3
       - *ref_4
       - *ref_5
-  - name: Common Used
-    icon: fa fa-star
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - &ref_6
-        title: Jellyfin
-        description: Movie Website
-        icon: "\thttps://avatars.githubusercontent.com/u/45698031?s=200&v=4"
-        url: https://link.gubohan.fun/movie
-        target: newtab
-        statusCheck: true
-        id: 0_1050_jellyfin
-      - &ref_7
-        title: Cloudflare
-        icon: >-
-          https://img2.baidu.com/it/u=327422277,3969550399&fm=253&fmt=auto&app=138&f=JPG?w=952&h=500
-        url: https://dash.cloudflare.com/
-        target: newtab
-        id: 1_1050_cloudflare
-      - &ref_8
-        title: Zhihu
-        icon: >-
-          https://raw.githubusercontent.com/AaronConlon/blog/99de0d61fce8467ecd9e88df4128f83575f95991/public/zhihu.svg
-        url: https://www.zhihu.com
-        id: 2_1050_zhihu
-      - &ref_9
-        title: Hupu
-        icon: >-
-          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAe1BMVEXAHi+/GCu+ESbISVPRb3a9AB2/Fim8ABT13uD////fmp/ipqvUeH/CJTbOYWnLW2S8ABLouLy6AAD55ujbkpfvzdC9ABrgoaa9ABzFN0T57e7GQEvmtLjw1dbqwsXZh47clJr78vO8AA3jrbHYgonLUl3QaXHRcnnEMD5mTD8JAAABIUlEQVR4AWKgNWBkwiPHDGiGrg4kBIIoinbhD6eNGdwh/wgXGY9g7++pVovZl5Pj/KDrwQ/CXcmI4uRHUw9Axm1iQiql30C2drmH0JJZfrt7fuHbbyvzqhY4a3jbJUnI6ImOeUHvNch4UQwM2Xtfe4egQCg1Rt4Lfkf1gR2KCnsU7oNeaaK6vdCYcFT7ThRWAOZPtHMIWSCoyx57akHDX6gbSC4ArKoJMPIQCIbXB9QIufBya3N3GOcJQPV86tCjNGap0GnuA/2ErJDGZRQB3MOef88ANC1G+7nQSVDwAlWFHnuS+xj16yUtFO97HgIoCqxDgPH1FDuAryH4AuRcIE6zr3fSttWjm6hIG4EyjTIxib0iItdmjqZ90CVGDrF/2R97axWXpG+LGQAAAABJRU5ErkJggg==
-        url: https://www.hupu.com
-        id: 3_1050_hupu
-    filteredItems:
       - *ref_6
-      - *ref_7
-      - *ref_8
-      - *ref_9
-  - name: Movie
-    icon: fa fa-film
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items: []
-    filteredItems: []
-  - name: Temp
-    icon: fa fa-box-open
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items: []
-    filteredItems: []
-  - name: Work
+  - name: High frequency
     icon: fa fa-folder-open
     displayData:
-      sortBy: default
+      sortBy: most-used
       rows: 1
       cols: 1
-      collapsed: false
+      collapsed: true
       hideForGuests: false
-    items:
-      - &ref_10
-        title: TongYi
-        icon: >-
-          https://img.alicdn.com/imgextra/i1/O1CN01asLYeX1WhbsyEZn5u_!!6000000002820-55-tps-56-56.svg
-        url: https://tongyi.aliyun.com/qianwen/
-        target: newtab
-        id: 0_419_tongyi
-    filteredItems:
-      - *ref_10
+    items: []
+    filteredItems: []
   - name: Outdoors
     icon: fa fa-door-open
     displayData:
       sortBy: default
       rows: 1
       cols: 1
-      collapsed: false
+      collapsed: true
       hideForGuests: false
     items:
-      - &ref_11
+      - &ref_7
         title: Twitter
         url: https://x.com/
         id: 0_863_twitter
-      - &ref_12
+      - &ref_8
         title: Ins
         url: https://instagram.com
         id: 1_863_ins
     filteredItems:
+      - *ref_7
+      - *ref_8
+  - name: Temp
+    icon: >-
+      https://img.gubohan.fun/api/cfile/AgACAgUAAyEGAASOYCgnAAMfZ4IvPd10dJ__d3dKNN_Gxj7pAfQAAuK_MRsrphhU4ue083tUmHsBAAMCAAN3AAM2BA
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - &ref_9
+        title: Cloudflare
+        icon: >-
+          https://img2.baidu.com/it/u=327422277,3969550399&fm=253&fmt=auto&app=138&f=JPG?w=952&h=500
+        url: https://dash.cloudflare.com/
+        target: newtab
+        id: 0_406_cloudflare
+      - &ref_10
+        title: Zhihu
+        icon: >-
+          https://raw.githubusercontent.com/AaronConlon/blog/99de0d61fce8467ecd9e88df4128f83575f95991/public/zhihu.svg
+        url: https://www.zhihu.com
+        id: 1_406_zhihu
+      - &ref_11
+        title: Hupu
+        icon: >-
+          https://w1.hoopchina.com.cn/channel/website/static/images/basketball-nba-logo.png
+        url: https://www.hupu.com
+        id: 2_406_hupu
+      - &ref_12
+        title: TongYi
+        icon: >-
+          https://img.alicdn.com/imgextra/i1/O1CN01asLYeX1WhbsyEZn5u_!!6000000002820-55-tps-56-56.svg
+        url: https://tongyi.aliyun.com/qianwen/
+        target: newtab
+        id: 3_406_tongyi
+    filteredItems:
+      - *ref_9
+      - *ref_10
       - *ref_11
       - *ref_12
